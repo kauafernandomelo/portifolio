@@ -51,3 +51,25 @@ barberGithub.addEventListener("click", () => {
     window.open("https://github.com/kauafernandomelo", "_blank")
 
 })
+document
+.getElementById("bot-demo")
+.addEventListener("click", () => {
+
+    window.open(
+        "https://www.youtube.com/watch?v=rIawJG3cI5Y",
+        "_blank"
+    );
+
+});
+
+
+document
+.getElementById("bot-github")
+.addEventListener("click", () => {
+
+    window.open(
+        "https://github.com/kauafernandomelo",
+        "_blank"
+    );
+
+});
