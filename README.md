@@ -8,7 +8,7 @@ O site possui um visual moderno, responsivo e minimalista, focado em destacar me
 
 # 🚀 Acesse o projeto
 
-🔗 (https://kauafernandomelo.github.io/portifolio-site/)
+🔗 (https://kauafernandomelo.github.io/portifolio/))
 
 ---
 
