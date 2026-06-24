@@ -62,22 +62,6 @@ portifolio/
 
 ---
 
-## 🚀 Rodando localmente
-
-```bash
-# clone o repositório
-git clone https://github.com/kauafernandomelo/portifolio.git
-
-# entre na pasta
-cd portifolio
-
-# abra o index.html no navegador (ou use a extensão Live Server do VS Code)
-```
-
-Não há dependências nem build — é HTML, CSS e JS puros.
-
----
-
 ## 📸 Preview
 
 <p align="center">
