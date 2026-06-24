@@ -1,72 +1,95 @@
-# 🌐 Portfólio Pessoal - Kauã Fernando
+<h1 align="center">💼 Portfólio — Kaua Fernando</h1>
 
-Portfólio desenvolvido para apresentar meus projetos, habilidades e evolução como desenvolvedor.
+<p align="center">
+  Portfólio pessoal de <strong>Kaua Fernando</strong> — Desenvolvedor Back-End.<br/>
+  Site de página única com design moderno, escuro e responsivo, criado para apresentar
+  meus principais projetos, tecnologias e formas de contato.
+</p>
 
-O site possui um visual moderno, responsivo e minimalista, focado em destacar meus principais projetos e tecnologias.
+<p align="center">
+  <a href="https://kauafernandomelo.github.io/portifolio/">
+    <img src="https://img.shields.io/badge/Ver%20site%20ao%20vivo-6d6cf6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo"/>
+  </a>
+</p>
 
----
-
-# 🚀 Acesse o projeto
-
-🔗 (https://kauafernandomelo.github.io/portifolio/))
-
----
-
-# ✨ Funcionalidades
-
-✅ Design moderno e responsivo
-✅ Navegação suave entre seções
-✅ Seção de projetos
-✅ Tecnologias utilizadas
-✅ Links para GitHub e LinkedIn
-✅ Interface adaptada para mobile
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222?style=flat-square&logo=githubpages&logoColor=white"/>
+</p>
 
 ---
 
-# 🛠️ Tecnologias utilizadas
+## 🔗 Acesse o site
 
-* HTML5
-* CSS3
-* JavaScript
-* Font Awesome
+**https://kauafernandomelo.github.io/portifolio/**
 
 ---
 
-# 📂 Estrutura do projeto
+## ✨ Destaques
+
+- 🎨 **Design profissional** — paleta escura (slate) com acento índigo/violeta
+- 🔤 **Tipografia moderna** — fontes Sora (títulos) e Inter (texto)
+- ⌨️ **Animação de digitação** no hero e micro-interações sutis
+- 🟢 **Pill de status** "Disponível para novas oportunidades"
+- 🧭 **Navbar inteligente** que ganha fundo desfocado ao rolar
+- 🗂️ **Projetos com tags de tecnologia** e links para o código
+- 📱 **Totalmente responsivo**, com menu mobile
+- 🚀 Deploy automático via **GitHub Pages**
+
+---
+
+## 🛠️ Tecnologias
+
+- **HTML5** — estrutura semântica
+- **CSS3** — design system com variáveis, grid, flexbox e animações (sem frameworks)
+- **JavaScript (Vanilla)** — typing effect, navbar dinâmica, menu mobile e reveal on scroll (IntersectionObserver)
+- **Google Fonts** — Sora & Inter
+- **Font Awesome** — ícones
+
+---
+
+## 📂 Estrutura
 
 ```txt
-assets/
-index.html
-style.css
-script.js
+portifolio/
+├── index.html      # estrutura e conteúdo
+├── style.css       # design system e responsividade
+├── script.js       # interações (typing, navbar, menu, animações)
+└── assets/         # imagens (foto e prints dos projetos)
 ```
 
 ---
 
-# 🎯 Objetivo do projeto
+## 🚀 Rodando localmente
 
-Este projeto foi desenvolvido com foco em:
+```bash
+# clone o repositório
+git clone https://github.com/kauafernandomelo/portifolio.git
 
-* Prática de frontend
-* Design responsivo
-* Estruturação de portfólio profissional
-* Experiência do usuário
-* Apresentação de projetos pessoais
+# entre na pasta
+cd portifolio
 
----
+# abra o index.html no navegador (ou use a extensão Live Server do VS Code)
+```
 
-# 📸 Preview
-
-<img width="1920" height="1080" alt="fotonovaport" src="https://github.com/user-attachments/assets/7b41321d-8070-4669-9ad9-5fc230a30014" />
-
+Não há dependências nem build — é HTML, CSS e JS puros.
 
 ---
 
-# 👨‍💻 Autor
+## 📸 Preview
 
-Kauã Fernando
+<p align="center">
+  <img alt="Preview do portfólio" src="https://github.com/user-attachments/assets/7b41321d-8070-4669-9ad9-5fc230a30014" width="80%"/>
+</p>
 
-🔗 LinkedIn:
-(https://www.linkedin.com/in/kaua-fernando-5b60b7253)
+---
 
+## 👨‍💻 Autor
 
+**Kaua Fernando** — Desenvolvedor Back-End
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaua-fernando-5b60b7253)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kauafernandomelo)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:kauafernando098@gmail.com)
