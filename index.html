@@ -5,300 +5,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kaua | Portfólio</title>
-    <link 
-rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
+    <title>Kaua Fernando — Desenvolvedor Back-End</title>
+    <meta name="description" content="Portfólio de Kaua Fernando — Desenvolvedor Back-End especializado em Python, FastAPI, APIs REST, automação e IA/RAG.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- GLOW EFFECT -->
+    <!-- background decoration -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
 
-    <div class="glow glow1"></div>
-    <div class="glow glow2"></div>
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="nav">
+        <div class="nav-inner">
 
-    <!-- NAVBAR -->
+            <a href="#" class="brand">
+                <span class="brand-dot"></span>
+                Kaua<span class="brand-accent">.dev</span>
+            </a>
 
-    <nav>
+            <nav class="nav-links" id="navLinks">
+                <a href="#projects">Projetos</a>
+                <a href="#stack">Stack</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact" class="nav-cta">Contato</a>
+            </nav>
 
-        <div class="logo">
-            <h2>Kaua.dev</h2>
-        </div>
-
-        <div class="menu-button">
-            ☰
-        </div>
-
-        <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-
-    </nav>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-text">
-
-            <h1>
-                Olá, eu sou <span>Kaua</span>
-            </h1>
-
-            <p class="typing-text"></p>
-
-            <button class="projects-button">
-                Ver Projetos
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
 
         </div>
+    </header>
 
-        <div class="hero-image">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+        <div class="container hero-grid">
 
-            <img 
-                src="assets/avatar.png"
-                alt="Avatar Kaua"
-            >
+            <div class="hero-text">
 
-        </div>
+                <span class="status-pill">
+                    <span class="status-dot"></span>
+                    Disponível para novas oportunidades
+                </span>
 
-    </section>
-    <section class="skills hidden">
+                <h1>
+                    Kaua Fernando
+                </h1>
 
-    <p class="section-subtitle">
-        Tecnologias que venho utilizando
-        durante minha jornada como desenvolvedor.
-    </p>
-
-    
-<section class="skills hidden">
-
-   
-
-    <h2>Minhas Tecnologias</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <span>HTML</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>CSS</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <span>Python</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <span>SQL</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-mobile-screen"></i>
-            <span>Responsive</span>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-server"></i>
-            <span>FastAPI</span>
-        </div>
-
-    </div>
-
-</section>
-
-</section>  
-
-    <!-- PROJECTS -->
-
-    <section class="projects hidden" id="projects">
-
-       
-        <h2>Meus Projetos</h2>
-
-        <div class="projects-container">
-
-            <!-- PROJETO 1 -->
-
-            <div class="project-card">
-                <img 
-    src="assets/barbearia.PNG" 
-    alt="Sistema Barbearia"
-    class="project-image"
->
-
-                <h3>Sistema de Agendamentos</h3>
-
-                <p>
-                    Sistema web para gerenciamento
-                    de horários e clientes de uma
-                    barbearia, utilizando frontend,
-                    backend e integração com API.
+                <p class="hero-role">
+                    <span class="typing-text"></span><span class="caret">|</span>
                 </p>
 
-                <div class="project-buttons">
+                <p class="hero-desc">
+                    Construo <strong>APIs REST</strong>, automações e soluções com
+                    <strong>IA&nbsp;/&nbsp;RAG</strong> usando Python e FastAPI —
+                    com foco em código limpo, testes e deploy pronto para produção.
+                </p>
 
-                    <button id="barber-site">
-                        Ver Site
-                    </button>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        Ver projetos <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="https://github.com/kauafernandomelo" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
 
-                    <button id="barber-github">
-                        GitHub
-                    </button>
-
+                <div class="hero-socials">
+                    <a href="https://github.com/kauafernandomelo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kaua-fernando-5b60b7253" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:kauafernando098@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+5583999076797" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
                 </div>
 
             </div>
 
-            <!-- PROJETO 2 -->
+            <div class="hero-visual">
+                <div class="avatar-ring">
+                    <img src="assets/eu.PNG" alt="Foto de Kaua Fernando" class="avatar">
+                </div>
+                <div class="floating-badge badge-1"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="floating-badge badge-2"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                <div class="floating-badge badge-3"><i class="fa-solid fa-robot"></i> IA / RAG</div>
+            </div>
 
-            <div class="project-card">
+        </div>
+    </section>
 
-                <h3>Portfólio Esse Mesmo!</h3>
+    <!-- ===================== STACK ===================== -->
+    <section class="section reveal" id="stack">
+        <div class="container">
 
+            <div class="section-head">
+                <span class="eyebrow">Stack</span>
+                <h2>Tecnologias que utilizo</h2>
+                <p class="section-sub">Ferramentas para construir back-ends, automações e integrações com IA.</p>
+            </div>
+
+            <div class="stack-grid">
+                <div class="stack-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="stack-item"><i class="fa-solid fa-bolt"></i><span>FastAPI</span></div>
+                <div class="stack-item"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                <div class="stack-item"><i class="fa-solid fa-vial"></i><span>Pytest</span></div>
+                <div class="stack-item"><i class="fa-solid fa-robot"></i><span>IA &amp; RAG</span></div>
+                <div class="stack-item"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+                <div class="stack-item"><i class="fa-brands fa-git-alt"></i><span>Git &amp; GitHub</span></div>
+                <div class="stack-item"><i class="fa-solid fa-shield-halved"></i><span>JWT</span></div>
+                <div class="stack-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="stack-item"><i class="fa-brands fa-html5"></i><span>HTML &amp; CSS</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section reveal" id="projects">
+        <div class="container">
+
+            <div class="section-head">
+                <span class="eyebrow">Portfólio</span>
+                <h2>Projetos em destaque</h2>
+                <p class="section-sub">Uma seleção do que venho construindo — do back-end à automação com IA.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- 1 -->
+                <article class="card">
+                    <div class="card-thumb"><i class="fa-solid fa-robot"></i></div>
+                    <h3>TechShop Bot — RAG</h3>
+                    <p>Bot de atendimento no Telegram que usa RAG para responder com base numa base de conhecimento e encaminhar para um humano quando necessário.</p>
+                    <div class="tags">
+                        <span>n8n</span><span>Gemini</span><span>Qdrant</span><span>Docker</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/kauafernandomelo/techshop-bot-rag-n8n" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+                <!-- 2 -->
+                <article class="card">
+                    <div class="card-thumb"><i class="fa-solid fa-link"></i></div>
+                    <h3>Encurtador de URL</h3>
+                    <p>API de encurtamento de links com redirecionamento, estatísticas de acesso e documentação interativa. Arquitetura em camadas e testes.</p>
+                    <div class="tags">
+                        <span>FastAPI</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>Pytest</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/kauafernandomelo/encurtador-url" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+                <!-- 3 -->
+                <article class="card">
+                    <div class="card-thumb"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <h3>Controle de Estoque</h3>
+                    <p>API REST para gestão de estoque: cadastro de produtos, entradas e saídas, autenticação JWT e documentação automática via Swagger.</p>
+                    <div class="tags">
+                        <span>FastAPI</span><span>JWT</span><span>PostgreSQL</span><span>Swagger</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/kauafernandomelo/controle-de-estoque" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+                <!-- 4 -->
+                <article class="card">
+                    <div class="card-thumb"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Rastreador de Preços</h3>
+                    <p>Monitor automático de preços via web scraping que roda 100% na nuvem com GitHub Actions, guarda histórico e envia relatórios por e-mail.</p>
+                    <div class="tags">
+                        <span>Playwright</span><span>BeautifulSoup</span><span>GitHub Actions</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/kauafernandomelo/rastreador-precos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+                <!-- 5 -->
+                <article class="card card-featured">
+                    <img src="assets/bot.PNG" alt="WhatsApp Automation Bot" class="card-image">
+                    <h3>WhatsApp Automation Bot</h3>
+                    <p>Sistema de automação para WhatsApp com processamento inteligente de pedidos e atendimento automatizado de ponta a ponta.</p>
+                    <div class="tags">
+                        <span>Python</span><span>FastAPI</span><span>WPPConnect</span><span>NLP</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://www.youtube.com/watch?v=rIawJG3cI5Y" target="_blank" rel="noopener" class="link-strong"><i class="fa-solid fa-play"></i> Ver demo</a>
+                        <a href="https://github.com/kauafernandomelo/Automacao-WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+                <!-- 6 -->
+                <article class="card">
+                    <div class="card-thumb"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>b2bflow — Disparo em Massa</h3>
+                    <p>Automação de mensagens em massa: lê contatos no Supabase e dispara mensagens personalizadas no WhatsApp via Z-API, com logging do fluxo.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Supabase</span><span>Z-API</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/kauafernandomelo/b2bflow" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section reveal" id="about">
+        <div class="container about-grid">
+
+            <div class="about-left">
+                <span class="eyebrow">Sobre mim</span>
+                <h2>Desenvolvedor Back-End focado em qualidade</h2>
+            </div>
+
+            <div class="about-right">
                 <p>
-                    Portfólio moderno desenvolvido
-                    para apresentar meus projetos,
-                    habilidades e evolução como
-                    desenvolvedor Web, utilizando HTML, CSS e JavaScript.
+                    Sou desenvolvedor Back-End com foco em <strong>Python</strong> e
+                    <strong>FastAPI</strong>. Construo APIs REST, automações e soluções
+                    com IA (RAG), aplicando boas práticas como arquitetura em camadas,
+                    autenticação JWT, testes automatizados e deploy em nuvem.
+                </p>
+                <p>
+                    Já entreguei projetos de APIs, automação de processos, web scraping
+                    e integração com IA — e evoluo continuamente em direção ao Full Stack,
+                    sempre buscando escrever um código limpo e pronto para produção.
                 </p>
 
-                <div class="project-buttons">
-
-                    
-                   
+                <div class="about-tags">
+                    <span>APIs REST</span>
+                    <span>Autenticação JWT</span>
+                    <span>Testes automatizados</span>
+                    <span>Docker</span>
+                    <span>IA / RAG</span>
+                    <span>Deploy em nuvem</span>
                 </div>
-
-            </div>
-
-            <!-- PROJETO 3 -->
-
-            <div class="project-card">
-
-               <!-- PROJETO 3 -->
-
-<div class="project-card">
-
-    <img 
-        src="assets/bot.PNG" 
-        alt="WhatsApp Automation Bot"
-        class="project-image"
-    >
-
-    <h3>WhatsApp Automation Bot</h3>
-    
-
-    <p>
-        Sistema de automação para WhatsApp
-        desenvolvido com Python, FastAPI e
-        WPPConnect, com processamento inteligente
-        de pedidos e atendimento automatizado.
-    </p>
-
-    <div class="project-buttons">
-
-        <button id="bot-demo">
-            Demo
-        </button>
-
-        <button id="bot-github">
-            GitHub
-        </button>
-
-    </div>
-
-</div>
-
             </div>
 
         </div>
-
     </section>
 
-    <!-- ABOUT -->
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section reveal" id="contact">
+        <div class="container contact-box">
+            <span class="eyebrow">Contato</span>
+            <h2>Vamos construir algo juntos</h2>
+            <p class="section-sub">Aberto a oportunidades e parcerias. Me chame para conversar.</p>
 
-    <section class="about hidden" id="about">
-
-        <div class="about-content">
-
-            <h2>Sobre Mim</h2>
-
-            <p>
-                Sou um desenvolvedor Full Stack em formação,
-                apaixonado por tecnologia e criação de sistemas web.
-                Atualmente estudo HTML, CSS, JavaScript, Python
-                e FastAPI, desenvolvendo projetos modernos para
-                evoluir minhas habilidades no frontend e backend.
-            </p>
-
-            <p>
-                Já desenvolvi projetos de agendamento,
-                integração com APIs e aplicações web responsivas,
-                buscando sempre aprender novas tecnologias
-                e melhorar minhas práticas de desenvolvimento.
-            </p>
-
+            <div class="contact-actions">
+                <a href="mailto:kauafernando098@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Enviar e-mail
+                </a>
+                <a href="https://www.linkedin.com/in/kaua-fernando-5b60b7253" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
         </div>
-
     </section>
 
-    <!-- FOOTER -->
-
-    <footer id="contact">
-
-    <h2>Kaua.dev</h2>
-
-    <p>
-        © 2026 Kaua.dev
-    </p>
-
-    <div class="social-links">
-
-        <a href="https://github.com/kauafernandomelo" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/kaua-fernando-5b60b7253" target="_blank">
-            LinkedIn
-        </a>
-
-        <a href="mailto:kauafernando098@gmail.com">
-            kauafernando098@gmail.com
-        </a>
-
-        <a href="tel:+5583999076797">
-            (83) 99907-6797
-        </a>
-
-    </div>
-
-</footer>
-
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="brand"><span class="brand-dot"></span>Kaua<span class="brand-accent">.dev</span></span>
+            <p>© 2026 Kaua Fernando — Desenvolvedor Back-End</p>
+            <div class="footer-socials">
+                <a href="https://github.com/kauafernandomelo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kaua-fernando-5b60b7253" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:kauafernando098@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-
     </footer>
 
     <script src="script.js"></script>

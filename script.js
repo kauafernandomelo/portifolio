@@ -1,75 +1,72 @@
-const button = document.querySelector(".projects-button")
+// ===== ANIMAÇÃO DE DIGITAÇÃO (HERO) =====
 
-button.addEventListener("click", () => {
+const phrases = [
+    "Desenvolvedor Back-End",
+    "Python • FastAPI • APIs REST",
+    "Automação & IA / RAG",
+    "Código limpo, pronto para produção"
+];
 
-    const projectsSection = document.querySelector("#projects")
+const typingText = document.querySelector(".typing-text");
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-    projectsSection.scrollIntoView({
-        behavior: "smooth"
-    })
+function typeEffect() {
+    const current = phrases[phraseIndex];
 
-})
-const menuButton = document.querySelector(".menu-button")
+    if (!isDeleting) {
+        typingText.textContent = current.slice(0, ++charIndex);
+        if (charIndex === current.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 2000);
+            return;
+        }
+    } else {
+        typingText.textContent = current.slice(0, --charIndex);
+        if (charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+    }
 
-const menu = document.querySelector(".menu")
+    setTimeout(typeEffect, isDeleting ? 35 : 80);
+}
 
-menuButton.addEventListener("click", () => {
+typeEffect();
 
-    menu.classList.toggle("active")
+// ===== NAVBAR: FUNDO AO ROLAR =====
 
-})
-const hiddenElements = document.querySelectorAll(".hidden")
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+    nav.classList.toggle("scrolled", window.scrollY > 30);
+});
+
+// ===== MENU MOBILE =====
+
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => navLinks.classList.remove("active"));
+});
+
+// ===== ANIMAÇÃO DE ENTRADA AO ROLAR =====
+
+const revealEls = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
-
     entries.forEach((entry) => {
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show")
-
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
         }
+    });
+}, { threshold: 0.12 });
 
-    })
-
-})
-
-hiddenElements.forEach((element) => observer.observe(element))
-
-const barberSite = document.querySelector("#barber-site")
-
-barberSite.addEventListener("click", () => {
-
-    window.open("https://barbearia-pro-pi.vercel.app/", "_blank")
-
-})
-
-const barberGithub = document.querySelector("#barber-github")
-
-barberGithub.addEventListener("click", () => {
-
-    window.open("https://github.com/kauafernandomelo", "_blank")
-
-})
-document
-.getElementById("bot-demo")
-.addEventListener("click", () => {
-
-    window.open(
-        "https://www.youtube.com/watch?v=rIawJG3cI5Y",
-        "_blank"
-    );
-
-});
-
-
-document
-.getElementById("bot-github")
-.addEventListener("click", () => {
-
-    window.open(
-        "https://github.com/kauafernandomelo",
-        "_blank"
-    );
-
-});
+revealEls.forEach((el) => observer.observe(el));
