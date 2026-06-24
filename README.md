@@ -50,18 +50,6 @@
 
 ---
 
-## 📂 Estrutura
-
-```txt
-portifolio/
-├── index.html      # estrutura e conteúdo
-├── style.css       # design system e responsividade
-├── script.js       # interações (typing, navbar, menu, animações)
-└── assets/         # imagens (foto e prints dos projetos)
-```
-
----
-
 ## 📸 Preview
 
 <p align="center">
