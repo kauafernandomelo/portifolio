@@ -81,7 +81,7 @@ Não há dependências nem build — é HTML, CSS e JS puros.
 ## 📸 Preview
 
 <p align="center">
-  <img alt="Preview do portfólio" src="https://github.com/user-attachments/assets/7b41321d-8070-4669-9ad9-5fc230a30014" width="80%"/>
+  <img alt="Preview do portfólio" src="assets/preview.png" width="90%"/>
 </p>
 
 ---
